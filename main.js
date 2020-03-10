@@ -9,50 +9,43 @@ const giveCont = document.querySelector('.js-contTimes');
 
 function getRandomNumber() {
   return Math.ceil(Math.random() * 100);
-  }
-  getRandomNumber();
-console.log('algofunciona');
-console.log(getRandomNumber);
-debugger;
+}
+const randomNumber = getRandomNumber();
+
+console.log(randomNumber);
+
 //Usuario introduce un número, comprobamos que esté entre 0 y 100, comprobamos que sea igual o no a nuestro número, y devolvemos dos líneas
-function checkNumber(){
+function checkNumber() {
   const number = getNumberuser.value;
-  const randomNumber = getRandomNumber();
+  // const randomNumber = getRandomNumber();
   console.log(number);
   console.log(randomNumber);
 
-  if (number < 0 || number > 100){
+  if (number < 0 || number > 100) {
     givePistaUser.innerHTML = 'El número debe estar entre 1 y 100';
-  }
-  else if (number === randomNumber){
+  } else if (number === randomNumber) {
     givePistaUser.innerHTML = 'Has ganado campeona!!!';
-  }
-  else if (number < randomNumber){
+  } else if (number < randomNumber) {
     givePistaUser.innerHTML = 'Demasiado bajo';
-  }
-  else if (number > randomNumber){
+  } else if (number > randomNumber) {
     givePistaUser.innerHTML = 'Demasiado alto';
-  }
-  else{
+  } else {
     //do nothing
   }
 }
 
 // devolver el número de pruebas
 // function numItems{
-  // let tries = btn.currentTarget //numero de veces que pinchemos el botton
-  // tries = tries + 1;
-  // giveCont.innerHTML= ('Número de intentos: ' tries) 
+// let tries = btn.currentTarget //numero de veces que pinchemos el botton
+// tries = tries + 1;
+// giveCont.innerHTML= ('Número de intentos: ' tries)
 
 // }
 
 //llamamos a las funciones, porque todas funcionan con el boton
-function showall(){
+function showall() {
   checkNumber();
   //numItems();
-
 }
 
-
-
-btn.addEventListener('click' showall);
+btn.addEventListener('click', checkNumber);
