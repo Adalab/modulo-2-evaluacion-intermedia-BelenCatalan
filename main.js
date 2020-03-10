@@ -10,27 +10,25 @@ const givecont = document.querySelector('.js-contTimes');
 function getRandomNumber() {
   return Math.ceil(Math.random() * 100);
   }
-console.log(getRandomNumber);
 
+console.log(getRandomNumber);
+debugger;
 //Usuario introduce un número, comprobamos que esté entre 0 y 100, comprobamos que sea igual o no a nuestro número, y devolvemos dos líneas
 function checkNumber(){
   const number = getNumberuser.value;
   console.log(number);
+
   if (number < 0 || number > 100){
-    givePistaUser.innerHTML = `El número debe estar
-    entre 1 y 100`;
+    givePistaUser.innerHTML = 'El número debe estar entre 1 y 100';
   }
   else if (number === getRandomNumber){
-    givePistaUser.innerHTML = `Has ganado
-    campeona!!!`;
+    givePistaUser.innerHTML = 'Has ganado campeona!!!';
   }
   else if (number < getRandomNumber){
-    givePistaUser.innerHTML = `Demasiado
-    bajo.`;
+    givePistaUser.innerHTML = 'Demasiado bajo.'';
   }
   else if (number > getRandomNumber){
-    givePistaUser.innerHTML = `Demasiado
-    alto`;
+    givePistaUser.innerHTML = 'Demasiado alto';
   }
 }
 
