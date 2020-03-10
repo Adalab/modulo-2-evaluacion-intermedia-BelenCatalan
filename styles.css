@@ -1,0 +1,42 @@
+.body {
+  margin: 10px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  color: rgb(71, 69, 69);
+  font-size: 34px;
+}
+
+.introduce__number {
+  color: rgb(71, 69, 69);
+  font-size: 20px;
+  display: block;
+}
+.input {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(167, 164, 164);
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(65, 138, 235);
+  font-size: 20px;
+  color: white;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+.p {
+  border: 2px solid grey;
+  color: grey;
+  font-size: 18px;
+  width: 700px;
+  height: 30px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
