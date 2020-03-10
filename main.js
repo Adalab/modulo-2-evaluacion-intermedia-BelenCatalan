@@ -1,6 +1,7 @@
 'use strict';
 
 const btn = document.querySelector('.js-updateNumber');
+console.log(btn);
 const getNumberuser = document.querySelector('.js-getNumber');
 const givePistaUser = document.querySelector('.js-pistaUser');
 const giveCont = document.querySelector('.js-contTimes');
