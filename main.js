@@ -16,7 +16,7 @@ console.log(getRandomNumber);
 function checkNumber(){
   const number = getNumberuser.value;
   console.log(number);
-  if (number < 0 || > 100){
+  if (number < 0 || number > 100){
     givePistaUser.innerHTML = `El número debe estar
     entre 1 y 100`;
   }
@@ -42,9 +42,6 @@ function showall(){
   getRandomNumber();
   checkNumber();
 }
-
-
-
 
 
 
