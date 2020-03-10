@@ -3,13 +3,14 @@
 const btn = document.querySelector('.js-updateNumber');
 const getNumberuser = document.querySelector('.js-getNumber');
 const givePistaUser = document.querySelector('.js-pistaUser');
-const givecont = document.querySelector('.js-contTimes');
+const giveCont = document.querySelector('.js-contTimes');
 
-//Primero general un número aleatorio
+//Primero generar un número aleatorio
 
 function getRandomNumber() {
   return Math.ceil(Math.random() * 100);
   }
+  getRandomNumber();
 console.log('algofunciona');
 console.log(getRandomNumber);
 debugger;
@@ -39,13 +40,17 @@ function checkNumber(){
 
 // devolver el número de pruebas
 // function numItems{
+  // let tries = btn.currentTarget //numero de veces que pinchemos el botton
+  // tries = tries + 1;
+  // giveCont.innerHTML= ('Número de intentos: ' tries) 
 
 // }
 
 //llamamos a las funciones, porque todas funcionan con el boton
 function showall(){
-  getRandomNumber();
   checkNumber();
+  //numItems();
+
 }
 
 
