@@ -29,6 +29,7 @@
   color: white;
   border-radius: 16px;
   margin-top: 10px;
+  display: block;
 }
 .p {
   border: 2px solid grey;
@@ -39,4 +40,7 @@
   display: flex;
   text-align: left;
   align-items: center;
+}
+.form {
+  display: block;
 }
